@@ -31,7 +31,6 @@ export default function Contact() {
                     <div className={"ball " + ball.classN}  key={ball.Id}></div>
                 ))}
                 <h1>Contact Me</h1>
-                {/* <img src="https://learntocrack.com/wp-content/uploads/2020/12/contact-us.svg" alt=""/> */}
             </div>
             <div className="right">
                 <div className="decorateBall decoration"></div>
