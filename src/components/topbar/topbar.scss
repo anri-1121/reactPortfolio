@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.topbar {
+    width: 100%;
+    height: 70px;
+    background-color: $main-color;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: 1s all ease;
+    color: #FFFFFF;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                font-size: 40px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+
+                @include mobile {
+                    display: none;
+                }
+                
+                .icons {
+                    font-size: 25px;
+                    margin-right: 5px;
+                }
+
+                a {
+                    color: white;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .right {
+            .hamburger {
+                width: 32px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-right: 20px;
+
+                div {
+                    width: 100%;
+                    height: 5px;
+                    background-color: white;
+                    margin-bottom: 8px;
+                    transform-origin: right;
+                    transition: 1.1s all ease;
+                }
+            } 
+        }
+    }
+
+    &.active {
+        background-color: #29648A;
+        .hamburger {
+            div {
+                &:first-child {
+                    transform: rotate(-40deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(39deg);
+                }
+            }
+        }
+
+    }
+}
