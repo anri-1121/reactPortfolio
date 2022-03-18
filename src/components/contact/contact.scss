@@ -36,12 +36,12 @@
             top:110px;
             left: 50px;
             z-index: 3;
-            width: 100%;
+            width: 90%;
 
             @include mobile {
                 top: 52px;
-                left: 8%;
-                width: 305px;
+                left: 16%;
+                width: 255px;
             }
         }
     }
@@ -97,6 +97,7 @@
         @include mobile {
             width: 60px;
             height: 60px;
+            opacity: .8;
         }
     }
 

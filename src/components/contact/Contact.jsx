@@ -31,7 +31,7 @@ export default function Contact() {
                     <div className={"ball " + ball.classN}  key={ball.Id}></div>
                 ))}
                 <h1>Contact Me</h1>
-                <img src="https://learntocrack.com/wp-content/uploads/2020/12/contact-us.svg" alt=""/>
+                <img src="https://global-uploads.webflow.com/5a5de2c1a0eb5000019e4dc0/61262f232fd1bd5d61456168_contact-img-1.png" width='300px' alt=""/>
             </div>
             <div className="right">
                 <div className="decorateBall decoration"></div>
